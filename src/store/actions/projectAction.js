@@ -74,17 +74,21 @@ export const deleteNotification= appointment => {
   return (dispatch, getStatem, { getFirebase, getFirestore }) => {
   
     const firestore = getFirestore();
-    firestore.collection("notifications")
-      .doc(appointment.id)
-      .delete()
-      .then(function() {
-        console.log("Document successfully deleted!");
-      })
+    
+
+
+
+    firestore.collection("Notifications")
+    .doc(appointment.id)
+    .delete()
+    .then(function() {
+      console.log("Document successfully deleted!");
+    })
       .then(() => {
-        dispatch({ type: "DELETE_APPOINTMENT", appointment });
+        dispatch({ type: "DELETE_Notification", appointment });
       })
       .catch(err => {
-        dispatch({ type: "DELETE_APPOINTMENT_ERROR", err });
+        dispatch({ type: "DELETE_Notification_ERROR", err });
       });
   };
 };
