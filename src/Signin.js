@@ -24,8 +24,11 @@ state = {
         if(auth.uid) return <Redirect to ='/' />
          return (
             <div className = "containterr" >
-                <form    onSubmit = {this.handleSubmit} classname = "white" >
-                <h5 className = "grey-text text-darken-3 center" >Sign In</h5> 
+                 <div id = "b">
+                <form    onSubmit = {this.handleSubmit}  >
+                <h5 className = "green-text  center" >Sign In</h5> 
+               <center className = "green-text"> <b>_____________________________</b></center>
+               
                 <div className = "input-fleld" >
                     <label htmlFor ="email">Email</label>
                     <input  onChange = {this.handleChange} id = "email" type= "Email"/>
@@ -43,6 +46,7 @@ state = {
                  { authError ? <p>{authError}</p>:null}
                  </div>
                 </form>
+                </div>
             </div>
         )
     }

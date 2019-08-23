@@ -6,6 +6,7 @@ import AppoinmentDetails from './AppoimnetDetails';
 import Signin from './Signin'
 import Signup from './Signup';
 import createProject from './createProject';
+import Deleted from './Deleted';
 import Footer from './Footer';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
       <Switch>
         <Route exact path='/' component={Dashboard}/>
+        <Route exact path='/Deleted/:id' render = {(props) => <Deleted {...props} handle ={handle}/>}/>
         <Route exact path='/appointment/:id' render = {(props) => <AppoinmentDetails {...props} handle ={handle}/>}/>
         <Route exact path='/appointmentsforteam/:id' render = {(props) => <AppoinmentDetails {...props} handle ={handle}/>}/>
         <Route exact path='/signin' component={Signin}/>

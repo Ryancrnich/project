@@ -27,6 +27,7 @@ state = {
         if(!auth.uid) return <Redirect to ='/signin' />
          return (
             <div className = "containterr" >
+                <div id="b">
                 <form    onSubmit = {this.otherhandleSubmit} classname = "white " >
                 <h5 className = "grey-text text-darken-3"> New Team Appointment </h5>
                 <div className = "input-fleld" >
@@ -46,10 +47,10 @@ state = {
                  </div>     
                  </div>
                 </form>
-
+</div>
 
 <div className = "space"> <small>`</small></div>
-
+<div id="b">
                 <form    onSubmit = {this.handleSubmit} classname = "white " >
                 <h5 className = "grey-text text-darken-3"> New Business Appointment </h5>
                 <div className = "input-fleld" >
@@ -69,6 +70,7 @@ state = {
                  </div>     
                  </div>
                 </form>
+                </div>
             </div>
         )
     }

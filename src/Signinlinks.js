@@ -7,7 +7,6 @@ import { signOut } from './store/actions/authactions'
 ;
         return (
             <ul className="right">
-            <li className="grey-text text-lighten-4 " ><NavLink to = "/">Home </NavLink></li>
             <li><a onClick ={props.signOut}>Logout</a></li>
             <li><NavLink to = "/" className = "btn btn-floating pink lighten-1" >
     { props.profile.initials }

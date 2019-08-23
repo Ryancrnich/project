@@ -114,14 +114,15 @@ for(let i = 0; i<this.props.options.length; i++){
                 {" "}
                 
               </div>
+              <div id = "b">
               <form onSubmit={this.handleSubmit}>
                 <div className="input-fleld">
                   <button className="btn yellow darken-2 center">GET</button>
                 </div>
-              </form>
+              </form>]
             </div>{" "}
           </div>{" "}
-        </div>
+          </div></div>
       );
     } else {
       return (
