@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
 
-var firebaseConfig = {
+var fbconfig = {
     apiKey: "AIzaSyAPtbNtucGwrNkXNRBNaJI0QdGQcMSXt_A",
     authDomain: "m3-studios.firebaseapp.com",
     databaseURL: "https://m3-studios.firebaseio.com",
@@ -12,6 +12,6 @@ var firebaseConfig = {
     appId: "1:153200372479:web:940ad6836676dbbe"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(fbconfig);
   firebase.firestore();
   export default firebase;

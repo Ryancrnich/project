@@ -13,13 +13,13 @@ const projectReducer = (state = initState, action)=>{
            console.log('created project', action.project)
            return state
            case 'CREATE_PROJECT_ERROR':
-           console.log('created project error', action.err)
+           console.log('createdd project error', action.err)
            return state
            case 'CREATE_APPOINTMENT_ERROR':
             console.log('created project error', action.err)
             return state
             case 'CREATE_APPOINTMENT':
-            console.log('created project', action.project)
+            console.log('Created project', action.project)
              return state
              case    'DELETE_APPOINTMENT':
             console.log('created project error', action.err)
@@ -33,8 +33,20 @@ const projectReducer = (state = initState, action)=>{
                 case  'CREATE_NOIFICATIONS_ERROR':
                     console.log('created project', action.err)
                     return state
+                    case  'DELETE_Notification_ERROR':
+                        console.log('did not deleted project', action.err)
+                        return state
+                        case  'DELETE_Notification':
+                            console.log('DELETED Notification', action.appointment)
+                            return state
+                            case  'DELETE_Notification':
+                                console.log('DELETED_APPOINTMENT"', action.appointment)
+                                return state
+                                case  'DELETE_Notification':
+                                    console.log('DELETED_APPOINTMENT"_ERROR', action.err)
+                                    return state
            default :
-           return state
+           return state 
    }
 }
 export default projectReducer 
